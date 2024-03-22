@@ -40,5 +40,7 @@ static double ObliczSrednia(int[] tablica){
         suma += liczba;
     }
     return suma / tablica.Length;
+}
+Console.WriteLine("AGAIN Here we have the world");
 
 }
