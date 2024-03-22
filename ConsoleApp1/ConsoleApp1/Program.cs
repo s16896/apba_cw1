@@ -9,15 +9,30 @@ for (int a = 1; a <= 10; a++)
 {
     Console.WriteLine(a);
 }
-<<<<<<< Updated upstream
 Console.WriteLine("AGAIN Here we have the world");
 
-static double ObliczSrednia(int[] tablica)
+static int ZnajdzMax(int[] tablica)
+
 {
     if (tablica == null || tablica.Length == 0)
     {
         throw new ArgumentException("Tablica nie może być pusta");
     }
+
+
+    int maksymalnaWartosc = tablica[0];
+    foreach (int liczba in tablica)
+    {
+        if (liczba > maksymalnaWartosc)
+        {
+            maksymalnaWartosc = liczba;
+        }
+    }
+    return maksymalnaWartosc;
+}
+  
+static double ObliczSrednia(int[] tablica){
+
 
     double suma = 0;
     foreach (int liczba in tablica)
@@ -26,6 +41,6 @@ static double ObliczSrednia(int[] tablica)
     }
     return suma / tablica.Length;
 }
-=======
 Console.WriteLine("AGAIN Here we have the world");
->>>>>>> Stashed changes
+
+}
