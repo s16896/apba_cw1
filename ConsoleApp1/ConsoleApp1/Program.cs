@@ -9,6 +9,7 @@ for (int a = 1; a <= 10; a++)
 {
     Console.WriteLine(a);
 }
+<<<<<<< Updated upstream
 Console.WriteLine("AGAIN Here we have the world");
 
 static double ObliczSrednia(int[] tablica)
@@ -25,3 +26,6 @@ static double ObliczSrednia(int[] tablica)
     }
     return suma / tablica.Length;
 }
+=======
+Console.WriteLine("AGAIN Here we have the world");
+>>>>>>> Stashed changes
